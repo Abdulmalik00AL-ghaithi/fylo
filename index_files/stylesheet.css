@@ -1,0 +1,365 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ *{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    /* outline: 3px solid black; */
+    box-sizing: border-box;
+} 
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: #e4e7f0;
+    top: 0;
+}
+header div{
+    width: 15%;
+    display: flex;
+
+}
+header img{
+    width: 5rem;
+    height: 2rem;
+    margin: 10px auto;
+    
+}
+header nav{
+    width: 85%;
+    display: flex;
+}
+header ul{
+    margin: auto 200px;
+    display: flex; 
+    justify-content: space-evenly;
+    list-style: none;
+    width: 50%;
+}
+header ul a{
+    color:black;
+    text-decoration: none;
+}
+header ul a:hover{
+    background-color: aqua;
+    border-radius: 10px;
+    padding:0.8rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px -1px;
+}
+
+
+/* fisrt section */
+.op1{
+
+    display: flex;
+    align-items: center; 
+    /* justify-content: center;  */
+     
+    padding-bottom: 100px;
+    margin-left: 5rem;
+    margin-top: 100px;
+    /* padding-right: 5rem; */
+    overflow: hidden;
+}
+.op1 img{
+    /* max-width: 100%;p */
+    width: 50%;
+    display: block;
+}
+.op1 div{
+    width: 50%;
+    /* margin-left: 5rem; */
+}
+.op1 h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+.op1 p{
+    font-size: 1.1rem;
+}
+.op1 form{
+    display: flex;
+    gap: .8rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+.form_email{
+    width:17.5rem;
+    height: 2rem;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    color:  hsl(0, 0%, 60%);
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0px 0px 5px -1px hsl(0, 0%, 25%);
+
+}
+.form_submit{
+    
+    height: 2.1rem;
+    width: 10rem;
+    border-style:none;                      
+    background-color: #2f65f9;       
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px -1px hsl(0, 0%, 25%);
+
+            
+}
+@media(max-width:375px){
+ .op1 {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+ .op1 h1{
+    font-size: 1.8rem;
+    
+ }
+ .op1 div{
+    display: flex;
+    /* gap: .1rem; */
+    flex-direction: column;
+
+ }
+ .op1 form{ 
+    flex-direction: column;
+    align-items: flex-start;
+}   
+.op1 img{
+    order: -1;
+
+}
+ .op1 div ,.op1 img,.op1 input{
+    width: 100%;
+ }
+}
+
+/* second section */
+.op2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:url('../images/bg-curve-desktop.svg') ;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding:100px 0;
+    /* background-color: black; */
+    width: 100;
+    
+
+    
+} 
+.op2 .d1{
+    display: flex;
+    
+    margin-left: 5rem;
+
+}
+.op2 h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;   
+    align-self: flex-start;
+    margin-left: 5rem;
+}
+
+.op2 img{
+    width: 50%;
+}
+.op2 a{
+    display: flex;
+    color:#719f9c ;
+    text-decoration: none;
+    display: flex;
+    border-bottom: 3px solid #719f9c ;
+    text-align: center;
+    width: 10.5rem;
+    padding: 0.5rem 0;
+     
+}
+.op2 a img{
+    width: 1rem;
+    height: 1rem;
+    
+}
+.op2 .comment{
+    background-color: white;
+    width: 20rem;
+    padding:1rem 2.5rem ;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+.op2 .comment img{
+    width: 1rem;
+    height: 1rem;
+}
+.op2 .comment p{
+   line-height: 1.8;
+}
+.op2 .comment .author{
+    width: 100%;
+    line-height: 1.7;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.op2 .comment .author img{
+    width:3rem;
+    height: 3rem;
+    border-radius: 100vh;
+    
+}
+.op2 .comment .author p{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    
+}
+.op2 .comment .author span{
+    font-weight: normal;
+    font-size: 0.7rem;
+}
+@media(max-width:375px){
+    .op2 {
+       flex-direction: column;
+    }
+    .op2 div {
+        flex-direction: column;
+     }
+    .op2 img{
+        order:-1;
+    }
+    .op2 form{ 
+       flex-direction: column;
+       align-items: flex-start;
+   }   
+    .op2 div ,.op2 img{
+       width: 100%;
+       margin: auto;
+    }}
+
+/* section three */
+.op3{
+    display: flex;
+    gap: 150px;
+    padding: 50px 100px 50px 100px; 
+    background-color: hsl(238, 22%, 44%) ;
+    color:whitesmoke;
+}
+.op3 article{
+    width: 45%;
+}
+.op3 h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+.op3 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+}
+.op3 form .form_email2{
+    width:75%;
+    border-style: none;
+    border-radius:3px ;
+    color:  hsl(0, 0%, 60%);
+    padding: .5rem;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0px 0px 5px -1px hsl(0, 0%, 25%);
+
+}
+.op3 form .form_submit2{
+    width: 35%;
+    padding: .8rem .5rem;
+    border-radius: 3px;
+    border-style:none;
+    background-color: #2f65f9;  
+    color: whitesmoke;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0px 0px 5px -1px hsl(0, 0%, 25%);
+}
+@media(max-width:375px){
+    .op3 {
+       flex-direction: column;
+       gap: 0;
+       width: 100%;
+       text-align: center;
+    }
+
+    .op3 article ,.op3 form,.op3 form .form_email2,.op3 form .form_submit2{
+       width: 100%;
+    }}
+
+/* section four */
+.op4{
+    display:flex;
+    justify-content: space-between;
+    padding:100px 100px ;
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+
+}
+
+ .op4 .contact{
+    width:20%;
+    display: flex;
+    flex-direction: column;
+
+ }
+ .op4 .contact img{
+    width:80%;
+    height: 50%;
+    
+ }
+ .op4 .contact p img{
+    width:1rem;
+    height: 1rem;
+        
+ }
+ .list{
+    list-style: none;
+ }
+ .list li{
+    padding-bottom: 10px;
+ }
+ .list a{
+    color: white;
+    text-decoration: none;
+ }
+
+.social-media-icons-white a{
+    color: white;
+ }
+ @media(max-width:375px){
+    .op4{
+        flex-direction: column;
+        width: 100%;
+        
+        padding: 0;
+        flex-wrap: wrap;
+        
+    }
+    .op4 .contact{
+    width: 100%;
+        flex-direction: column;
+        
+    
+    }
+}
